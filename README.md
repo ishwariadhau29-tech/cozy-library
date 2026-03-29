@@ -18,24 +18,6 @@ Welcome to **The Cozy Library**, a simple and responsive online book store where
 ---
 
 ## Project Structure
-# The Cozy Library - Online Book Store
-
-Welcome to **The Cozy Library**, a simple and responsive online book store where users can explore different categories of books and check out details like author, publish date, rating, and price.
-
----
-
-## Features
-
-- Browse books by categories: **Fictional, Non-Fictional, Comedy, Horror**  
-- View book details: author, publish date, rating, and price  
-- Responsive layout for **desktop and mobile**  
-- Sidebar menu for easy navigation  
-- Search bar for quick book search  
-- Interactive buttons with hover effects  
-
----
-
-## Project Structure
  book-store
 │
 ├── index.html # Main HTML file
