@@ -1,0 +1,328 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(239, 232, 232);
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(17, 18, 18);
+}
+
+h2:hover{
+    text-decoration: underline;
+    box-shadow: 2px 2px 4px rgba(0,0,0, 0.5);
+    transition: .3s ease;
+}
+h1:hover{
+    text-decoration: underline;
+    box-shadow: 2px 2px 4px rgba(0,0,0, 0.5);
+    transition: .3s ease;
+}
+
+.overlay{
+    left:0;
+    top:0;
+    position: fixed;
+    height:100%;
+    width:100%;
+    background-color: rgba(0,0,0, 0.5);
+   backdrop-filter: blur(4px);
+    opacity:0;
+    pointer-events: none;
+    transition: all .3s ease;
+    z-index:900;
+}
+#check:checked ~ .overlay{
+    opacity:1;
+    pointer-events: all;
+}
+nav{
+    display: flex;
+   align-items: center;
+    justify-content: space-evenly;
+    justify-content: end;
+    position: sticky;
+    top: 0;
+    gap:50px;
+    background-color: black;
+    color: azure;
+    font-size: 20px;
+   padding-right: 12px;
+    z-index: 999;
+    
+}
+.search_bar{
+    width:100%;
+    text-align:center;
+    margin-bottom:20px;
+    background-color: black;
+    padding: 10px;
+}
+.search_bar input {
+    width:60%;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+
+section h2 {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+section p {
+  font-size: 18px;
+  color: #555;
+}
+.menu a:hover{
+    background-color: #0bb733;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 12px;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+}
+nav a{
+    text-decoration: none;
+    color:white
+}
+.btn_one, .btn_two{
+    position: absolute;
+}
+.btn_one{
+    font-size:20px;
+    font-weight:400;
+    position: fixed;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    z-index:1000;
+}
+.btn_two{
+    font-size:20px;
+    font-weight:400;
+    position: absolute;
+    cursor: pointer;
+    opacity: 1;
+    top: 10px;
+    right: 10px;
+}
+
+.menu{
+    display: grid;
+}
+
+
+.menu a{
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    color: black;
+    font-size: 18px;
+}
+
+.check_box{
+    display: none;
+}
+.sidebar_menu{
+    position: fixed;
+    left:-300px;
+    top:0;
+    height: 100vh;
+    width:250px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow:2px 2px 8px rgba(0,0,0, 0.5);
+    transition: .3s;
+    padding-top: 50px;
+    z-index: 999;
+    }
+.sidebar_menu .logo a{
+    padding-top: 10px;
+    left:50px;
+    width:80%;
+    font-size: 10px;
+    font-weight: bold;
+    color: aliceblue;
+    text-decoration: none;
+}
+.check_box .menu{
+    display: none;
+}
+@media(max-width:600px){
+    nav{
+        display: none;
+    }
+
+    .check_box{
+        display: block;
+    }
+    .check_box .menu{
+        display: block;
+    }
+    .information{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+#check{
+    display:none;
+}
+#check:checked ~ .sidebar_menu{
+    left :0;
+}
+h1{
+    font-size: 70px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+section{
+    margin: 0px 0;
+}
+.main
+{
+    display: grid;
+    text-align: center;
+    justify-content: space-around;
+}
+.box{
+    height:400px;
+    width:100%;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+   
+    
+}
+button{
+    height: 40px;
+    width:120px;
+    border-radius: 4px;
+    cursor: pointer;
+  
+}
+#books{
+    padding: 40px;
+    display: grid;
+    justify-content:space-evenly;
+    gap:20px;
+}
+img{
+    width:100%;
+    max-width:200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+li{
+    padding-left: 0%;
+    text-align: left;
+}
+h3{
+    margin:5px 0;
+}
+.v1{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    
+}
+.card{
+    width:90%;
+    max-width:300px;
+    height:auto;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.3);
+}
+.card .info{
+    width:100%;
+    padding: 10px;
+}
+.card ul{
+    width:100%;
+    padding:10px;
+    margin:0;
+    list-style:none;
+    border:2px solid rgb(5, 5, 5);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0,0,0, 0.5) ;
+}
+.btn{
+    margin-top:10px;
+    height: 30px;
+    width: 100%;
+    cursor:pointer;
+}
+button{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+ul button{
+    align-content: center;
+    align-content: baseline;
+}
+
+button:hover, .btn:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 4px rgba(0,0,0, 0.5) ;
+    background-color: darkgrey;
+    transition: .3s ease;
+}
+.price{
+    background-color: rgb(11, 195, 51);
+    font-weight: bold;
+}
+.card:hover{
+    transform: translateY(-10px);
+    transition: 1s;
+    box-shadow: 2px 2px 4px rgba(0,0,0, 0.5);
+}
+@media(max-width:600px){
+    h1{
+        font-size: 30px;
+    }
+    .v1{
+         flex-direction: column;
+         align-items:center;
+    }
+    .card{
+        width:90%;
+    }
+}
+footer{
+    background-color: black;
+    color:white;
+    display: grid;
+    text-align: center;
+    padding: 13px;
+    margin-top: 40px;
+    width: 100vw;
+}
+nav a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.information{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.information section{
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, .4);
+    padding: 5px;
+}
+footer p:hover{
+    text-decoration: underline;
+}
