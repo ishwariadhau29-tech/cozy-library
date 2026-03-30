@@ -20,11 +20,10 @@ Welcome to **The Cozy Library**, a simple and responsive online book store where
 ## Project Structure
  book-store
 │
-├── index.html # Main HTML file
-├── style.css # CSS styling for the project
-├── screenshots/ # Folder containing project screenshots
-├── images/ # All book images
-└── README.md # Project overview and instructions
+1. index.html # Main HTML file    2.style.css # CSS styling for the project
+3. screenshots/ # Folder containing project screenshots
+4. images/ # All book images
+5. README.md # Project overview and instructions
 
 
 ---
